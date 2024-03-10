@@ -48,10 +48,10 @@ body {
 
 
 /* ====== Page header styles ====== */
-.page-header-container {
+.page-header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .main-navigation {
@@ -134,12 +134,7 @@ body {
 /* ====== Page main styles ====== */
 .title {
   background-color: #2e2f42;
-  padding-bottom: 60px;
-}
-
-.container-title {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 188px 0
 }
 
 .title-text {
