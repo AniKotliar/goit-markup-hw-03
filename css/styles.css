@@ -51,6 +51,7 @@ body {
 .page-header-container {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc
 }
 
 .main-navigation {
@@ -75,7 +76,7 @@ body {
 
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .menu-link {
@@ -106,7 +107,7 @@ body {
 
 .contacts-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -138,7 +139,7 @@ body {
 
 .container-title {
   padding-top: 188px;
-  padding-bottom: 292px;
+  padding-bottom: 188px;
 }
 
 .title-text {
@@ -182,12 +183,24 @@ body {
   padding-bottom: 120px;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+}
+
 .business-solutions-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .business-solutions {
@@ -236,6 +249,10 @@ body {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.text-wraper {
+  padding: 32px 0;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -243,7 +260,6 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -252,7 +268,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 32px;
+
 }
 
 .section-our-portfolio {
@@ -279,9 +295,14 @@ body {
 
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+}
+
+.portfolio-text-wraper {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+
 }
 
 .portfolio-name {
@@ -290,17 +311,13 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
-  margin-left: 16px;
 }
 
 .portfolio-info {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
-  margin-left: 16px;
 }
 
 /* ====== /Page main styles ====== */
@@ -308,13 +325,10 @@ body {
 /* ====== Page footer styles ====== */
 .page-footer {
   background-color: #2e2f42;
-}
-
-.page-footer-container {
-  padding-top: 140px;
-  padding-bottom: 100px;
+  padding: 100px 0;
   display: block;
 }
+
 
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -324,6 +338,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .text-color-footer {
@@ -335,7 +351,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;
   max-width: 264px;
 }
 
