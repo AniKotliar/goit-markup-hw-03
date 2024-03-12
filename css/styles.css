@@ -55,11 +55,13 @@ body {
 
 .page-header-container {
   display: flex;
+  align-items: center;
 }
 
 .main-navigation {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 .logo-top {
@@ -111,8 +113,6 @@ body {
 .contacts-list {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .address-link {
@@ -301,8 +301,6 @@ body {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
-
 }
 
 .portfolio-name {
